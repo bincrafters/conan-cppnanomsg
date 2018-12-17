@@ -9,8 +9,6 @@ class TestPackageConan(ConanFile):
     settings = "os", "compiler", "build_type", "arch"
     generators = "cmake"
 
-    requires = ("nanomsg/1.1.2@bincrafters/stable")
-
     def build(self):
         cmake = CMake(self)
         cmake.configure()
