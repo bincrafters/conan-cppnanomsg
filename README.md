@@ -1,9 +1,9 @@
 [![Download](https://api.bintray.com/packages/bincrafters/public-conan/cppnanomsg%3Abincrafters/images/download.svg) ](https://bintray.com/bincrafters/public-conan/cppnanomsg%3Abincrafters/_latestVersion)
-[![Build Status Travis](https://travis-ci.org/bincrafters/conan-cppnanomsg.svg?branch=stable%2F1.1.2)](https://travis-ci.org/bincrafters/conan-cppnanomsg)
+[![Build Status Travis](https://travis-ci.com/bincrafters/conan-cppnanomsg.svg?branch=stable%2F20181216)](https://travis-ci.com/bincrafters/conan-cppnanomsg)
 
 ## Conan package recipe for [*cppnanomsg*](https://github.com/nanomsg/cppnanomsg)
 
-C++ binding for nanomsg 
+C++ binding for nanomsg
 
 The packages generated with this **conanfile** can be found on [Bintray](https://bintray.com/bincrafters/public-conan/cppnanomsg%3Abincrafters).
 
@@ -19,17 +19,17 @@ If you wish to report an issue or make a request for a Bincrafters package, plea
 
 ### Basic setup
 
-    $ conan install cppnanomsg/1.1.2@bincrafters/stable
+    $ conan install cppnanomsg/20181216@bincrafters/stable
 
 ### Project setup
 
 If you handle multiple dependencies in your project is better to add a *conanfile.txt*
 
     [requires]
-    cppnanomsg/1.1.2@bincrafters/stable
+    cppnanomsg/20181216@bincrafters/stable
 
     [generators]
-    cmake
+    txt
 
 Complete the installation of requirements for your project running:
 
@@ -45,15 +45,6 @@ The following command both runs all the steps of the conan file, and publishes t
     $ conan create . bincrafters/stable
 
 
-### Available Options
-| Option        | Default | Possible Values  |
-| ------------- |:----------------- |:------------:|
-| shared      | False |  [True, False] |
-| enable_doc      | False |  [True, False] |
-| enable_getaddrinfo_a      | True |  [True, False] |
-| enable_tests      | False |  [True, False] |
-| enable_tools      | True |  [True, False] |
-| enable_nanocat      | True |  [True, False] |
 
 
 ## Add Remote
@@ -66,4 +57,4 @@ The following command both runs all the steps of the conan file, and publishes t
 NOTE: The conan recipe license applies only to the files of this recipe, which can be used to build and package cppnanomsg.
 It does *not* in any way apply or is related to the actual software being packaged.
 
-[MIT](https://github.com/bincrafters/conan-cppnanomsg/blob/stable/1.1.2/LICENSE.md)
+[MIT](https://github.com/bincrafters/conan-cppnanomsg/blob/stable/20181216/LICENSE.md)
