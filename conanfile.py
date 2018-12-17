@@ -16,11 +16,13 @@ class CppnanomsgConan(ConanFile):
     author = "Bincrafters <bincrafters@gmail.com>"
     license = "MIT"
     exports = ["LICENSE.md"]
+    requires = ("nanomsg/1.1.2@bincrafters/stable")
 
     _source_subfolder = "source_subfolder"
 
     def source(self):
-        tools.get("{0}/archive/{1}.zip".format(self.homepage, self._commit_id), sha256="a857c0d4698cb68128071711fc9c3e7aaa7751f4d6f20d9ba2e86d94ce6695d7")
+        tools.get("{0}/archive/{1}.zip".format(self.homepage, self._commit_id),
+                  sha256="a857c0d4698cb68128071711fc9c3e7aaa7751f4d6f20d9ba2e86d94ce6695d7")
         extracted_dir = self.name + "-" + self._commit_id
         os.rename(extracted_dir, self._source_subfolder)
 
