@@ -1,8 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-
-from conans import ConanFile, tools
 import os
+from conans import ConanFile, tools
 
 
 class CppnanomsgConan(ConanFile):
@@ -27,7 +26,7 @@ class CppnanomsgConan(ConanFile):
         os.rename(extracted_dir, self._source_subfolder)
 
     def package(self):
-        self.copy(pattern="LICENSE", dst="license", src=self._source_subfolder)
+        self.copy(pattern="COPYING", dst="licenses", src=self._source_subfolder)
         self.copy("nn.hpp", dst="include/cppnanomsg", src=self._source_subfolder)
 
     def package_id(self):
