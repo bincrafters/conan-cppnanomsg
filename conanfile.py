@@ -10,7 +10,6 @@ class CppnanomsgConan(ConanFile):
     topics = ("conan", "cppnanomsg", "nanomsg", "binding")
     url = "https://github.com/bincrafters/conan-cppnanomsg"
     homepage = "https://github.com/nanomsg/cppnanomsg"
-    author = "Bincrafters <bincrafters@gmail.com>"
     license = "MIT"
     exports = ["LICENSE.md"]
     requires = ("nanomsg/1.1.2@bincrafters/stable")
