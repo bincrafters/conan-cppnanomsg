@@ -11,7 +11,6 @@ class CppnanomsgConan(ConanFile):
     url = "https://github.com/bincrafters/conan-cppnanomsg"
     homepage = "https://github.com/nanomsg/cppnanomsg"
     license = "MIT"
-    exports = ["LICENSE.md"]
     requires = ("nanomsg/1.1.2@bincrafters/stable")
 
     _source_subfolder = "source_subfolder"
